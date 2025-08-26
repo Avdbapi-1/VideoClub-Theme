@@ -1,0 +1,417 @@
+/**
+ * VideoClub Video Metabox Styles
+ * 
+ * @package videoclub
+ */
+
+/* Admin Metabox Styles */
+.videoclub-video-meta .form-table td.first {
+    width: 200px;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.videoclub-video-meta .form-table td.first label {
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.videoclub-video-meta .form-table td {
+    padding: 10px 0;
+}
+
+.videoclub-video-meta .dashicons {
+    color: #0073aa;
+}
+
+/* Frontend Video Container Styles */
+.videoclub-video-container {
+    margin: 20px 0;
+}
+
+.video-thumbnail-wrapper {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-featured-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-featured-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.video-player-wrapper {
+    margin-bottom: 20px;
+}
+
+.video-player {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-player iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Ensure iframe is responsive */
+.video-player iframe[width="960"] {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 960/720;
+}
+
+.video-player.no-video {
+    background: #f5f5f5;
+    padding: 50px;
+    text-align: center;
+    border: 2px dashed #ddd;
+}
+
+.video-trailer-wrapper {
+    margin: 20px 0;
+}
+
+.video-trailer-wrapper h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.video-trailer iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border: none;
+}
+
+.video-metadata {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.meta-item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.meta-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.meta-label {
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    width: 120px;
+    margin-right: 10px;
+}
+
+.meta-value {
+    color: #666;
+}
+
+.meta-value a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.meta-value a:hover {
+    text-decoration: underline;
+}
+
+.description .meta-value {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Sidebar Video Info Styles */
+.videoclub-video-info {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.videoclub-video-info .widget-title {
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0073aa;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.video-info-content {
+    font-size: 14px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.info-icon {
+    margin-right: 8px;
+    font-size: 16px;
+    min-width: 20px;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #555;
+    margin-right: 8px;
+    min-width: 80px;
+}
+
+.info-value {
+    color: #666;
+    flex: 1;
+    word-break: break-word;
+}
+
+.download-link {
+    color: #0073aa;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .meta-label {
+        display: block;
+        width: auto;
+        margin-bottom: 5px;
+    }
+    
+    .video-player iframe {
+        height: 250px;
+    }
+    
+    .video-trailer iframe {
+        height: 200px;
+    }
+    
+    .info-item {
+        flex-direction: column;
+    }
+    
+    .info-label {
+        margin-bottom: 3px;
+        min-width: auto;
+    }
+    
+    .video-featured-image {
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .video-thumbnail-wrapper {
+        margin-bottom: 15px;
+    }
+    
+    .video-description {
+        padding: 15px;
+        margin-top: 20px;
+    }
+    
+    .video-description h3 {
+        font-size: 16px;
+    }
+}
+
+/* Video Player Enhancements */
+.video-player {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-player iframe {
+    border-radius: 8px;
+}
+
+.video-metadata {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Video Description Styles */
+.video-description {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #0073aa;
+}
+
+.video-description h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.description-content {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Pornstar Styles */
+.pornstar-link {
+    text-decoration: none;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.pornstar-link:hover {
+    text-decoration: none;
+}
+
+.pornstar-tag {
+    background: #0073aa;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 1px solid #0073aa;
+}
+
+.pornstar-link:hover .pornstar-tag {
+    background: #005a87;
+    border-color: #005a87;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.meta-item.pornstars .meta-value {
+    line-height: 1.8;
+}
+
+/* Sidebar Pornstar Tags */
+.sidebar-tag {
+    background: #0073aa;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 2px;
+    border: 1px solid #0073aa;
+    transition: all 0.3s ease;
+}
+
+.sidebar-link:hover .sidebar-tag {
+    background: #005a87;
+    border-color: #005a87;
+    transform: translateY(-1px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.sidebar-link {
+    text-decoration: none;
+}
+
+/* Pornstar Archive Page Styles */
+.page-header .pornstar-icon {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.page-header .pornstar-name {
+    color: #0073aa;
+    font-weight: 600;
+}
+
+.taxonomy-description {
+    margin: 15px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #0073aa;
+}
+
+.pornstar-meta {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.pornstar-meta .post-count {
+    background: #0073aa;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.page-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+/* Hover Effects */
+.video-player:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.download-link:hover {
+    color: #005a87;
+    transition: color 0.3s ease;
+}
+
+/* VideoClub Thumbnail Styles */
+.videoclub-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.thumbnail-wrap .videoclub-thumbnail {
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-link:hover .videoclub-thumbnail {
+    transform: scale(1.05);
+}
+
+
